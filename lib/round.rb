@@ -13,9 +13,9 @@ class Round
   end
 
   def record_guess(attempt)
-    attempt = Guess.new(attempt, current_card)
-    guesses << attempt
-    return attempt
+    @try = Guess.new(attempt, current_card)
+    guesses << @try
+    return @try
   end
 
 end

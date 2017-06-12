@@ -33,7 +33,6 @@ class RoundTest < Minitest::Test
   end
 
   def test_it_can_tell_you_if_youre_right
-    skip
     assert_equal "Correct!", round.guesses.first.feedback
   end
 

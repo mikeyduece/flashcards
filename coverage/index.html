@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T07:53:42-06:00">2017-06-12T07:53:42-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T08:16:40-06:00">2017-06-12T08:16:40-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -73,7 +73,7 @@
       <tr>
         <td class="strong"><a href="#948a70d3cbacec386e59acd666f4f84dcf54a64e" class="src_link" title="lib/guess.rb">lib/guess.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>22</td>
+        <td>17</td>
         <td>10</td>
         <td>10</td>
         <td>0</td>
@@ -383,40 +383,10 @@
         <li class="never" data-hits="" data-linenumber="16">
           
           
-          <code class="ruby">    # if correct?</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="17">
-          
-          
-          <code class="ruby">    #   return &quot;Correct!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="18">
-          
-          
-          <code class="ruby">    # else</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="19">
-          
-          
-          <code class="ruby">    #   return &quot;Incorrect!&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="20">
-          
-          
-          <code class="ruby">    # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="21">
-          
-          
           <code class="ruby">  end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="22">
+        <li class="never" data-hits="" data-linenumber="17">
           
           
           <code class="ruby">end</code>
@@ -534,19 +504,19 @@
         <li class="covered" data-hits="1" data-linenumber="16">
           <span class="hits">1</span>
           
-          <code class="ruby">    attempt = Guess.new(attempt, current_card)</code>
+          <code class="ruby">    @try = Guess.new(attempt, current_card)</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="17">
           <span class="hits">1</span>
           
-          <code class="ruby">    guesses &lt;&lt; attempt</code>
+          <code class="ruby">    guesses &lt;&lt; @try</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="18">
           <span class="hits">1</span>
           
-          <code class="ruby">    return attempt</code>
+          <code class="ruby">    return @try</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="19">
