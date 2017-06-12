@@ -1,48 +1,19 @@
 {
   "Unit Tests": {
     "coverage": {
-      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/card.rb": [
+      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/card_generator.rb": [
         1,
-        null,
         1,
-        null,
         1,
-        38,
-        38,
-        null,
-        null,
-        null
-      ],
-      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/deck.rb": [
         1,
-        null,
-        1,
-        null,
-        1,
-        15,
+        3,
+        3,
         null,
         null,
         1,
         1,
+        0,
         null,
-        null
-      ],
-      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/guess.rb": [
-        1,
-        1,
-        1,
-        null,
-        1,
-        13,
-        13,
-        null,
-        null,
-        1,
-        9,
-        null,
-        null,
-        1,
-        4,
         null,
         null
       ],
@@ -80,8 +51,53 @@
         null,
         null,
         null
+      ],
+      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/guess.rb": [
+        1,
+        1,
+        1,
+        null,
+        1,
+        13,
+        13,
+        null,
+        null,
+        1,
+        9,
+        null,
+        null,
+        1,
+        4,
+        null,
+        null
+      ],
+      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/card.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        38,
+        38,
+        null,
+        null,
+        null
+      ],
+      "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/deck.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        15,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null
       ]
     },
-    "timestamp": 1497292613
+    "timestamp": 1497298497
   }
 }
