@@ -24,8 +24,8 @@
         1,
         null,
         1,
-        54,
-        54,
+        57,
+        57,
         null,
         null,
         null
@@ -36,7 +36,7 @@
         1,
         null,
         1,
-        15,
+        16,
         null,
         null,
         1,
@@ -45,7 +45,6 @@
         null
       ],
       "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/guess.rb": [
-        1,
         1,
         1,
         null,
@@ -91,6 +90,8 @@
         1,
         3,
         3,
+        null,
+        0,
         null,
         3,
         null,
@@ -162,6 +163,6 @@
         null
       ]
     },
-    "timestamp": 1497302475
+    "timestamp": 1497303856
   }
 }
