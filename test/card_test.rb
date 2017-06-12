@@ -19,6 +19,6 @@ class CardTest < Minitest::Test
   end
 
   def test_is_knows_the_answer
-    assert_equal "Juneau", card.answer
+    assert_equal "juneau", card.answer
   end
 end
