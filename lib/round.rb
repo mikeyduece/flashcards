@@ -21,8 +21,8 @@ class Round
 
   def next_card
     if @try.correct?
-      number_correct += 1
-    end 
+      @number_correct += 1
+    end
   end
 
 end
