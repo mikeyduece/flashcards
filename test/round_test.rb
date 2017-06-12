@@ -23,4 +23,8 @@ class RoundTest < Minitest::Test
     assert_equal [], round.guesses
   end
 
+  def test_it_can_draw_a_card
+    assert_instance_of Card, round.current_card
+  end
+
 end
