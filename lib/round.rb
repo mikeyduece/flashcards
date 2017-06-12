@@ -26,4 +26,8 @@ class Round
     @current_card += 1
   end
 
+  def percent_correct
+    
+  end
+
 end

@@ -48,11 +48,26 @@ class RoundTest < Minitest::Test
     round.next_card
     assert_instance_of Array, deck.cards
     assert_instance_of Card, deck.cards[1]
+    assert_equal 2, deck.cards.count
+  end
+
+  def test_it_can_count_more_than_one_guess
+    round.record_guess("2")
+    assert_instance_of Guess, round.record_guess("2")
+    assert_equal 2, round.guesses.count
   end
 
   def test_it_can_record_wrong_guess
     round.record_guess("2")
-    assert_equal "Incorrect!", round.guesses.last.feedback 
+    assert_equal "Incorrect!", round.guesses.last.feedback
+  end
+
+  def tst_it_can_count_correct_while_having_wrong_guesses
+    assert_equal 1, round.number_correct
+  end
+
+  def test_it_can_give_percentage_correct
+    assert_equal 50, round.percent_correct
   end
 
 end
