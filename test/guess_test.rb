@@ -23,11 +23,12 @@ class GuessTest < Minitest::Test
     assert_equal "Correct!", guess.feedback
   end
 
-  def test_it_can_pull_another_card
-    card = Card.new("What is the capital of Alaska?", "Juneau")
-    guess = Guess.new("Juneau", card)
-    assert_equal "Correct!", guess.feedback
-
+  def test_it_can_pull_another_card_and_tell_difference_in_answers
+    skip
+    card = Card.new("Which planet is closest to the Sun?", "Mercury")
+    guess = Guess.new("Saturn", card)
+    assert_equal "Incorrect!", guess.feedback
+    # refute guess.correct?
   end
 
 end

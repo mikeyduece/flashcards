@@ -4,7 +4,7 @@ class Guess
 
   def initialize(response, card)
     @response = response.downcase
-    @card = card
+    @card = Card.new
   end
 
   def correct?
@@ -12,6 +12,10 @@ class Guess
   end
 
   def feedback
-    "Correct!"
+    if response == card.answer
+      return "Correct!"
+    elsif response != card.answer
+      return "Incorrect!"
+    end
   end
 end
