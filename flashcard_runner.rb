@@ -41,6 +41,7 @@ puts "Welcome! You're playing with #{deck.count} cards"
 puts "-"*60
 deck.cards.each do |card|
   puts "This is card number #{round.current + 1} out of #{deck.count}."
+  puts "*"*60
   puts "Question: #{card.question}"
   response = gets.chomp
   round.record_guess(response)
