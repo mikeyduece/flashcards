@@ -41,6 +41,9 @@ class Round
       puts "This is card number #{current + 1} out of #{deck.count}."
       puts "Question: #{card.question}"
       response = gets.chomp.downcase
+      if response.downcase == "hint"
+        hint
+      end
       record_guess(response)
       puts guesses.last.feedback
       next_card
