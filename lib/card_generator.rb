@@ -1,14 +1,15 @@
 require './lib/round'
 class CardGenerator
-  attr_reader :filename, :cards
+  attr_reader :cards
   def initialize(filename=nil)
-    @filename = filename
     @cards = []
+    read_cards(filename)
   end
 
-  def cards
-    File.readlines filename do |question, answer|
-      cards << Card.new(question, answer)
+  def read_cards(filename)
+    File.foreach filename do |line|
+      card = line.chomp.split(",")
+      cards << Card.new(card[0], card[1])
     end
   end
 end

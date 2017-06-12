@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T14:14:57-06:00">2017-06-12T14:14:57-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T14:36:28-06:00">2017-06-12T14:36:28-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">98.0%</span></span>
+    (<span class="covered_percent"><span class="green">100.0%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         5.19
+         6.45
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>5</b> files in total.
-    <b>50</b> relevant lines. 
-    <span class="green"><b>49</b> lines covered</span> and
-    <span class="red"><b>1</b> lines missed </span>
+    <b>51</b> relevant lines. 
+    <span class="green"><b>51</b> lines covered</span> and
+    <span class="red"><b>0</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,17 +57,17 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>15.8</td>
+        <td>22.2</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#1ddd61b80f54c28472db198071291c821aa9b4f8" class="src_link" title="lib/card_generator.rb">lib/card_generator.rb</a></td>
-        <td class="yellow strong">88.89 %</td>
-        <td>14</td>
-        <td>9</td>
-        <td>8</td>
-        <td>1</td>
-        <td>1.3</td>
+        <td class="green strong">100.0 %</td>
+        <td>15</td>
+        <td>10</td>
+        <td>10</td>
+        <td>0</td>
+        <td>4.9</td>
       </tr>
       
       <tr>
@@ -160,14 +160,14 @@
           <code class="ruby">  def initialize(question=nil, answer=nil)</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="6">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="54" data-linenumber="6">
+          <span class="hits">54</span>
           
           <code class="ruby">    @question = question</code>
         </li>
       
-        <li class="covered" data-hits="38" data-linenumber="7">
-          <span class="hits">38</span>
+        <li class="covered" data-hits="54" data-linenumber="7">
+          <span class="hits">54</span>
           
           <code class="ruby">    @answer = answer.downcase</code>
         </li>
@@ -198,11 +198,11 @@
         <div class="source_table" id="1ddd61b80f54c28472db198071291c821aa9b4f8">
   <div class="header">
     <h3>lib/card_generator.rb</h3>
-    <h4><span class="yellow">88.89 %</span> covered</h4>
+    <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>9</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
   
@@ -224,7 +224,7 @@
         <li class="covered" data-hits="1" data-linenumber="3">
           <span class="hits">1</span>
           
-          <code class="ruby">  attr_reader :filename, :cards</code>
+          <code class="ruby">  attr_reader :cards</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="4">
@@ -233,16 +233,16 @@
           <code class="ruby">  def initialize(filename=nil)</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
-          
-          <code class="ruby">    @filename = filename</code>
-        </li>
-      
-        <li class="covered" data-hits="3" data-linenumber="6">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
           
           <code class="ruby">    @cards = []</code>
+        </li>
+      
+        <li class="covered" data-hits="4" data-linenumber="6">
+          <span class="hits">4</span>
+          
+          <code class="ruby">    read_cards(filename)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
@@ -260,34 +260,40 @@
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">  def cards</code>
+          <code class="ruby">  def read_cards(filename)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="4" data-linenumber="10">
+          <span class="hits">4</span>
           
-          <code class="ruby">    File.readlines filename do |question, answer|</code>
+          <code class="ruby">    File.foreach filename do |line|</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="11">
+        <li class="covered" data-hits="16" data-linenumber="11">
+          <span class="hits">16</span>
           
-          
-          <code class="ruby">      cards &lt;&lt; Card.new(question, answer)</code>
+          <code class="ruby">      card = line.chomp.split(&quot;,&quot;)</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="covered" data-hits="16" data-linenumber="12">
+          <span class="hits">16</span>
           
-          
-          <code class="ruby">    end</code>
+          <code class="ruby">      cards &lt;&lt; Card.new(card[0], card[1])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby">    end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="15">
           
           
           <code class="ruby">end</code>
