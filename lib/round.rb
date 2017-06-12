@@ -14,9 +14,8 @@ class Round
 
   def record_guess(attempt)
     @try = Guess.new(attempt, current_card)
-    @guesses << @try
-    # require "pry"; binding.pry
-    return @guesses
+    guesses << @try
+    return @try
   end
 
 end

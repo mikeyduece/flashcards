@@ -28,15 +28,18 @@ class RoundTest < Minitest::Test
   end
 
   def test_can_it_guess
-    assert_instance_of Array, round.record_guess("Juneau")
+    assert_instance_of Guess, round.record_guess("Juneau")
     assert_equal 1, round.guesses.count
-    assert_instance_of Guess, round.record_guess("Juneau")[0]
   end
 
   def test_it_can_tell_you_if_youre_right
-    # require "pry"; binding.pry
     round.record_guess("juneau")
     assert_equal "Correct!", round.guesses.first.feedback
+  end
+
+  def test_it_can_count_correct
+    skip
+    assert_equal 1, round.number_correct.length
   end
 
 end
