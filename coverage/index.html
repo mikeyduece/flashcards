@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T08:16:40-06:00">2017-06-12T08:16:40-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T09:21:18-06:00">2017-06-12T09:21:18-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         3.78
+         4.19
        </span>
     </span> hits/line)
   </h2>
@@ -77,17 +77,17 @@
         <td>10</td>
         <td>10</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#a78347eced7948d5f8e649bb53c2397b898f4b6b" class="src_link" title="lib/round.rb">lib/round.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>21</td>
+        <td>22</td>
         <td>13</td>
         <td>13</td>
         <td>0</td>
-        <td>2.5</td>
+        <td>3.1</td>
       </tr>
       
     </tbody>
@@ -320,14 +320,14 @@
           <code class="ruby">  def initialize(response, card)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="6">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="6">
+          <span class="hits">7</span>
           
           <code class="ruby">    @response = response.downcase</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="7">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="7" data-linenumber="7">
+          <span class="hits">7</span>
           
           <code class="ruby">    @card = card</code>
         </li>
@@ -350,8 +350,8 @@
           <code class="ruby">  def correct?</code>
         </li>
       
-        <li class="covered" data-hits="4" data-linenumber="11">
-          <span class="hits">4</span>
+        <li class="covered" data-hits="5" data-linenumber="11">
+          <span class="hits">5</span>
           
           <code class="ruby">    response == card.answer</code>
         </li>
@@ -374,8 +374,8 @@
           <code class="ruby">  def feedback</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="15">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="15">
+          <span class="hits">3</span>
           
           <code class="ruby">    correct? ? &quot;Correct!&quot; : &quot;Incorrect!&quot;</code>
         </li>
@@ -477,8 +477,8 @@
           <code class="ruby">  def current_card</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="4" data-linenumber="12">
+          <span class="hits">4</span>
           
           <code class="ruby">    deck.cards[@current_card]</code>
         </li>
@@ -501,37 +501,43 @@
           <code class="ruby">  def record_guess(attempt)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="16">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="16">
+          <span class="hits">3</span>
           
           <code class="ruby">    @try = Guess.new(attempt, current_card)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="17">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="17">
+          <span class="hits">3</span>
           
-          <code class="ruby">    guesses &lt;&lt; @try</code>
+          <code class="ruby">    @guesses &lt;&lt; @try</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="18">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="18">
           
-          <code class="ruby">    return @try</code>
+          
+          <code class="ruby">    # require &quot;pry&quot;; binding.pry</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="19">
+        <li class="covered" data-hits="3" data-linenumber="19">
+          <span class="hits">3</span>
           
-          
-          <code class="ruby">  end</code>
+          <code class="ruby">    return @guesses</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="20">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
