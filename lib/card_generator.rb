@@ -1,6 +1,6 @@
-require './lib/round'
 class CardGenerator
   attr_reader :cards
+  
   def initialize(filename=nil)
     @cards = []
     read_cards(filename)
