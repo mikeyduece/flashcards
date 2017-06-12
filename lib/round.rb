@@ -1,11 +1,12 @@
 require './lib/guess'
 class Round
-  attr_reader :deck, :guesses
+  attr_reader :deck, :guesses, :number_correct
 
   def initialize(deck=nil)
     @deck = deck
     @guesses = []
     @current_card = 0
+    @number_correct = 0
   end
 
   def current_card
@@ -16,6 +17,12 @@ class Round
     @try = Guess.new(attempt, current_card)
     guesses << @try
     return @try
+  end
+
+  def next_card
+    if @try.correct?
+      number_correct += 1
+    end 
   end
 
 end

@@ -38,8 +38,10 @@ class RoundTest < Minitest::Test
   end
 
   def test_it_can_count_correct
-    skip
-    assert_equal 1, round.number_correct.length
+    round.record_guess("juneau")
+    require "pry"; binding.pry
+    round.next_card
+    assert_equal 1, round.number_correct
   end
 
 end
