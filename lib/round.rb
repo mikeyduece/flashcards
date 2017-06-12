@@ -25,6 +25,8 @@ class Round
   def next_card
     if @try.correct?
       @number_correct += 1
+    elsif !@try.correct?
+      deck.cards.push(deck.cards[@current])
     end
     @current += 1
   end
@@ -37,12 +39,13 @@ class Round
     puts "Welcome! You're playing with #{deck.count} cards"
     puts "-"*60
     deck.cards.each do |card|
-      puts ("*"*60).blue
       puts "This is card number #{current + 1} out of #{deck.count}."
       puts "Question: #{card.question}"
+      puts ("*"*60).blue
       response = gets.chomp.downcase
       if response.downcase == "hint"
         hint
+        start
       end
       record_guess(response)
       puts guesses.last.feedback
