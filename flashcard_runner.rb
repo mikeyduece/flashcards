@@ -14,4 +14,11 @@ puts "Welcome! You're playing with #{deck.count} cards"
 puts "-"*60
 deck.cards.each do |card|
   puts "This is card number #{round.current + 1} out of #{deck.count}."
+  puts "Question: #{card.question}"
+  response = gets.chomp
+  round.record_guess(response)
+  puts round.guesses.last.feedback
+  round.next_card
+  percent_correct
+  puts 
 end
