@@ -67,6 +67,9 @@ class RoundTest < Minitest::Test
   end
 
   def test_it_can_give_percentage_correct
+    round.record_guess("juneau")
+    round.next_card
+    round.record_guess("2")
     assert_equal 50, round.percent_correct
   end
 
