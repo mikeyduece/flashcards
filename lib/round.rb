@@ -25,8 +25,6 @@ class Round
   def next_card
     if @try.correct?
       @number_correct += 1
-    else
-      deck.cards << deck.cards[current_card]
     end
     @current += 1
   end

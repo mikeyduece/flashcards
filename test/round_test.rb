@@ -38,6 +38,13 @@ class RoundTest < Minitest::Test
     assert_equal "Correct!", round.guesses.first.feedback
   end
 
+  def test_it_can_traverse_the_deck
+    round.record_guess("2")
+    round.next_card
+    require "pry"; binding.pry
+    assert_equal card_2, round.current_card
+  end
+
   def test_it_can_count_correct
     round.record_guess("juneau")
     round.next_card
