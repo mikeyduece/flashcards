@@ -13,7 +13,7 @@ class Round
   end
 
   def current_card
-    deck.cards[@current]
+    deck.cards[current]
   end
 
   def record_guess(attempt)

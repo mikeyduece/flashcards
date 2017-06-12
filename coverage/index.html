@@ -14,27 +14,27 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T16:14:25-06:00">2017-06-12T16:14:25-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-12T16:26:21-06:00">2017-06-12T16:26:21-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">77.33%</span></span>
+    (<span class="covered_percent"><span class="red">76.32%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         4.82
+         4.74
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>6</b> files in total.
-    <b>75</b> relevant lines. 
+    <b>76</b> relevant lines. 
     <span class="green"><b>58</b> lines covered</span> and
-    <span class="red"><b>17</b> lines missed </span>
+    <span class="red"><b>18</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#a78347eced7948d5f8e649bb53c2397b898f4b6b" class="src_link" title="lib/round.rb">lib/round.rb</a></td>
-        <td class="red strong">63.16 %</td>
-        <td>60</td>
-        <td>38</td>
+        <td class="red strong">61.54 %</td>
+        <td>61</td>
+        <td>39</td>
         <td>24</td>
-        <td>14</td>
-        <td>3.1</td>
+        <td>15</td>
+        <td>3.0</td>
       </tr>
       
     </tbody>
@@ -758,11 +758,11 @@
         <div class="source_table" id="a78347eced7948d5f8e649bb53c2397b898f4b6b">
   <div class="header">
     <h3>lib/round.rb</h3>
-    <h4><span class="red">63.16 %</span> covered</h4>
+    <h4><span class="red">61.54 %</span> covered</h4>
     <div>
-      <b>38</b> relevant lines. 
+      <b>39</b> relevant lines. 
       <span class="green"><b>24</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="red"><b>15</b> lines missed.</span>
     </div>
   </div>
   
@@ -862,7 +862,7 @@
         <li class="covered" data-hits="12" data-linenumber="16">
           <span class="hits">12</span>
           
-          <code class="ruby">    deck.cards[@current]</code>
+          <code class="ruby">    deck.cards[current]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="17">
@@ -1018,19 +1018,19 @@
         <li class="missed" data-hits="0" data-linenumber="42">
           
           
-          <code class="ruby">      puts (&quot;*&quot;*60).blue</code>
+          <code class="ruby">      puts &quot;This is card number #{current + 1} out of #{deck.count}.&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="43">
           
           
-          <code class="ruby">      puts &quot;This is card number #{current + 1} out of #{deck.count}.&quot;</code>
+          <code class="ruby">      puts &quot;Question: #{card.question}&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="44">
           
           
-          <code class="ruby">      puts &quot;Question: #{card.question}&quot;</code>
+          <code class="ruby">      puts (&quot;*&quot;*60).blue</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="45">
@@ -1051,79 +1051,85 @@
           <code class="ruby">        hint</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="48">
+        <li class="missed" data-hits="0" data-linenumber="48">
+          
+          
+          <code class="ruby">        start</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="49">
           
           
           <code class="ruby">      end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
+        <li class="missed" data-hits="0" data-linenumber="50">
           
           
           <code class="ruby">      record_guess(response)</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="50">
+        <li class="missed" data-hits="0" data-linenumber="51">
           
           
           <code class="ruby">      puts guesses.last.feedback</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="51">
+        <li class="missed" data-hits="0" data-linenumber="52">
           
           
           <code class="ruby">      next_card</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="52">
+        <li class="never" data-hits="" data-linenumber="53">
           
           
           <code class="ruby">    end</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="53">
+        <li class="never" data-hits="" data-linenumber="54">
           
           
           <code class="ruby"></code>
-        </li>
-      
-        <li class="missed" data-hits="0" data-linenumber="54">
-          
-          
-          <code class="ruby">    puts game_over</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="55">
           
           
-          <code class="ruby">    puts &quot;You had #{number_correct} correct answers out of #{deck.count}</code>
+          <code class="ruby">    puts game_over</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="56">
+        <li class="missed" data-hits="0" data-linenumber="56">
           
           
-          <code class="ruby">          for a score of #{percent_correct}%&quot;</code>
+          <code class="ruby">    puts &quot;You had #{number_correct} correct answers out of #{deck.count}</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">          for a score of #{percent_correct}%&quot;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="58">
           
           
-          <code class="ruby">  end</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="59">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="60">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="61">
           
           
           <code class="ruby">end</code>
