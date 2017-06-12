@@ -24,7 +24,6 @@ class GuessTest < Minitest::Test
   end
 
   def test_it_can_pull_another_card_and_tell_difference_in_answers
-    skip
     card = Card.new("Which planet is closest to the Sun?", "Mercury")
     guess = Guess.new("Saturn", card)
     assert_equal "Incorrect!", guess.feedback

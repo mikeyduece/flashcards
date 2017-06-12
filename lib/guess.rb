@@ -4,7 +4,7 @@ class Guess
 
   def initialize(response, card)
     @response = response.downcase
-    @card = Card.new
+    @card = card
   end
 
   def correct?
