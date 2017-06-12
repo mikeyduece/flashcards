@@ -13,6 +13,7 @@ class RoundTest < Minitest::Test
 
   def test_it_exists
     round = Round.new
+    assert_instance_of Round, round
   end
 
   def test_it_can_hold_a_deck
