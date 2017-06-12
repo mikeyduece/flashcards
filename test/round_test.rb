@@ -43,4 +43,16 @@ class RoundTest < Minitest::Test
     assert_equal 1, round.number_correct
   end
 
+  def test_it_can_move_to_next_card
+    round.record_guess("juneau")
+    round.next_card
+    assert_instance_of Array, deck.cards
+    assert_instance_of Card, deck.cards[1]
+  end
+
+  def test_it_can_record_wrong_guess
+    round.record_guess("2")
+    assert_equal "Incorrect!", round.guesses.last.feedback 
+  end
+
 end

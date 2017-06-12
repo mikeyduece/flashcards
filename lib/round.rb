@@ -23,6 +23,7 @@ class Round
     if @try.correct?
       @number_correct += 1
     end
+    @current_card += 1
   end
 
 end
