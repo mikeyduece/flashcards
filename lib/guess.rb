@@ -12,10 +12,6 @@ class Guess
   end
 
   def feedback
-    if response == card.answer
-      return "Correct!"
-    elsif response != card.answer
-      return "Incorrect!"
-    end
+    correct? ? "Correct!" : "Incorrect!"
   end
 end
