@@ -7,13 +7,22 @@
         1,
         null,
         1,
-        7,
-        7,
+        16,
+        16,
         null,
         null,
         null
       ],
       "/Users/mikeheft/turing/mod1/projects/flash_cards/lib/deck.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        4,
+        null,
+        null,
+        1,
         1,
         null,
         null
@@ -42,6 +51,6 @@
         null
       ]
     },
-    "timestamp": 1497234416
+    "timestamp": 1497235172
   }
 }
