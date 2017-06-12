@@ -27,4 +27,13 @@ class RoundTest < Minitest::Test
     assert_instance_of Card, round.current_card
   end
 
+  def test_can_it_guess
+    assert_instance_of Guess, round.record_guess("Juneau")
+    assert_equal 1, round.guesses.count
+  end
+
+  def test_it_can_tell_you_if_youre_right
+    assert_equal "Correct!", round.guesses.first.feedback
+  end
+
 end
