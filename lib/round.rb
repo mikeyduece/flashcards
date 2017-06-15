@@ -1,14 +1,15 @@
 require 'colorize'
 require './lib/messages'
+
 class Round
   include Messages
 
   attr_reader :deck, :guesses, :number_correct, :current
 
   def initialize(deck=nil)
-    @deck = deck
-    @guesses = []
-    @current = 0
+    @deck           = deck
+    @guesses        = []
+    @current        = 0
     @number_correct = 0
   end
 
@@ -37,15 +38,17 @@ class Round
 
   def start
     puts "Welcome! You're playing with #{deck.count} cards"
-    puts "-"*60
+    puts ("-"*60).cyan
     deck.cards.each do |card|
-      puts "This is card number #{current + 1} out of #{deck.count}."
-      puts "Question: #{card.question}"
       puts ("*"*60).blue
+      puts "This is card number #{current + 1} out of #{deck.count}.".bold
+      puts "For a hint enter 'hint', to cheat, enter 'cheat'".cyan
+      puts "Question: #{card.question}"
       response = gets.chomp.downcase
       if response.downcase == "hint"
         hint
-        start
+      elsif response.downcase == "cheat"
+        puts "The answer is #{card.answer}.".bold.red 
       end
       record_guess(response)
       puts guesses.last.feedback

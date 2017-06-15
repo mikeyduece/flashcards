@@ -3,7 +3,7 @@ class Guess
 
   def initialize(response, card)
     @response = response.downcase
-    @card = card
+    @card     = card
   end
 
   def correct?
