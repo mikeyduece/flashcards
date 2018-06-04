@@ -48,7 +48,7 @@ class Round
       if response.downcase == "hint"
         hint
       elsif response.downcase == "cheat"
-        puts "The answer is #{card.answer}.".bold.red 
+        puts "The answer is #{card.answer}.".bold.red
       end
       record_guess(response)
       puts guesses.last.feedback

@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-13T12:17:34-06:00">2017-06-13T12:17:34-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-06-26T12:56:44-06:00">2017-06-26T12:56:44-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -1018,7 +1018,7 @@
         <li class="missed" data-hits="0" data-linenumber="41">
           
           
-          <code class="ruby">    puts &quot;-&quot;*60</code>
+          <code class="ruby">    puts (&quot;-&quot;*60).cyan</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="42">
@@ -1036,37 +1036,37 @@
         <li class="missed" data-hits="0" data-linenumber="44">
           
           
-          <code class="ruby">      puts &quot;This is card number #{current + 1} out of #{deck.count}.&quot;</code>
+          <code class="ruby">      puts &quot;This is card number #{current + 1} out of #{deck.count}.&quot;.bold</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="45">
           
           
-          <code class="ruby">      puts &quot;Question: #{card.question}&quot;</code>
+          <code class="ruby">      puts &quot;For a hint enter &#39;hint&#39;, to cheat, enter &#39;cheat&#39;&quot;.cyan</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="46">
           
           
-          <code class="ruby">      response = gets.chomp.downcase</code>
+          <code class="ruby">      puts &quot;Question: #{card.question}&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="47">
           
           
-          <code class="ruby">      if response.downcase == &quot;hint&quot;</code>
+          <code class="ruby">      response = gets.chomp.downcase</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="48">
           
           
-          <code class="ruby">        hint</code>
+          <code class="ruby">      if response.downcase == &quot;hint&quot;</code>
         </li>
       
         <li class="missed" data-hits="0" data-linenumber="49">
           
           
-          <code class="ruby">        start</code>
+          <code class="ruby">        hint</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="50">
@@ -1078,7 +1078,7 @@
         <li class="missed" data-hits="0" data-linenumber="51">
           
           
-          <code class="ruby">        puts card.answer</code>
+          <code class="ruby">        puts &quot;The answer is #{card.answer}.&quot;.bold.red</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="52">
